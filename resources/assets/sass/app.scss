@@ -1,0 +1,7 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import 'foundation';
+@include foundation-everything;
+
+.sign-block {
+  padding: 10% 0 5%;
+}
