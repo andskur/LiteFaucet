@@ -39,7 +39,7 @@
         </ul>
     </div>
 </div>
-<div class="callout large primary">
+<div class="callout large primary title-block">
     <div class="row column text-center">
         @yield('title-block')
     </div>
