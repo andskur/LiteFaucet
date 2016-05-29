@@ -4,6 +4,7 @@
  */
 
 return [
+    'domain'   => env('FAUCET_DOMAIN'),
     'name'     => env('FAUCET_NAME'),
     'payment'  => env('FAUCET_PAYMENT'),
     'timer'    => env('FAUCET_TIMER'),
