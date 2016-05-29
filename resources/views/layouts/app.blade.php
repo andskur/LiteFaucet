@@ -44,7 +44,17 @@
         @yield('title-block')
     </div>
 </div>
-@yield('content')
+<div class="row">
+    <div class="medium-2 columns">
+        {!! config('faucet.ads_block.left_vert') !!}
+    </div>
+    <div class="medium-8 columns">
+        @yield('content')
+    </div>
+    <div class="medium-2 columns">
+        {!! config('faucet.ads_block.right_vert') !!}
+    </div>
+</div>
 <br>
 <br>
 @if (Auth::guest())
