@@ -28,7 +28,7 @@ class Wallet extends Model
 
     public function getTimerAttribute()
     {
-        $timer = 200;
+        $timer = config('faucet.timer');
 
         $pr_time      = new Carbon($this->last_payment);
         $pr_time_diff = Carbon::now()->diffInMinutes($pr_time);

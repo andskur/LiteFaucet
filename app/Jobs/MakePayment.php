@@ -43,7 +43,7 @@ class MakePayment extends Job implements ShouldQueue
         $this->time   = Carbon::now();
         $this->wallet = Wallet::firstOrCreate([ 'user_id' => $this->user->id ]);
 
-        $this->reward = 0.0001;
+        $this->reward = config('faucet.payment');
 
         $this->refreward = $this->reward * 50 / 100;
 
