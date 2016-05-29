@@ -6,7 +6,6 @@
     <h3>Payment treshold is {{config('faucet.payout')}} ethereum</h3>
 @stop
 @section('content')
-    {{--<div class="blog-post">--}}
     {!! config('faucet.ads_block.home.top') !!}
     @if (Auth::guest())
         <div class="sign-block">
