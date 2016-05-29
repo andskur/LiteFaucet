@@ -9,4 +9,5 @@ return [
     'payment'  => env('FAUCET_PAYMENT'),
     'timer'    => env('FAUCET_TIMER'),
     'refferal' => env('FAUCET_REFFERAL'),
+    'payout'   => env('FAUCET_PAYOUT'),
 ];

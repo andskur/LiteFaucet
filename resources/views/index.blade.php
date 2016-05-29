@@ -3,6 +3,7 @@
     <h1>Our Faucet</h1>
     <h2 class="subheader">We pay {{config('faucet.payment')}} ethereum every {{config('faucet.timer')}}
         minutes!</h2>
+    <h3>Payment treshold is {{config('faucet.payout')}} ethereum</h3>
 @stop
 @section('content')
     <div class="row medium-8 large-7 columns">
