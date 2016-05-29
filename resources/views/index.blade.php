@@ -40,7 +40,7 @@
                         <button type="submit" class="large button">GET ETHERIUM!</button>
                     </form>
                 @endif
-                <h4>Your refferal link - <code>http://etherium/{{Auth::user()->name}}</code></h4>
+                <h4>Your refferal link - <code>http://{{config('faucet.domain')}}/{{Auth::user()->name}}</code></h4>
                 <p><i>{{config('faucet.refferal')}}% refferal payments!</i></p>
             </div>
         @endif
