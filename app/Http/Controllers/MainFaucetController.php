@@ -44,6 +44,6 @@ class MainFaucetController extends Controller
     {
         $this->dispatch(new MakePayment($this->user));
 
-        return back()->with('message', 'You got payment!');
+        return back()->with('message', 'You got '.config('faucet.payment').' ethereum!');
     }
 }
