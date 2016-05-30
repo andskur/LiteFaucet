@@ -28,7 +28,7 @@
     @else
         <div class="faucet-block text-center">
             @if(Session::has('message'))
-                <div class="callout succsess">
+                <div class="callout success">
                     <p>{{Session::get('message')}}</p>
                 </div>
             @endif
