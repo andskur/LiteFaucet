@@ -37,7 +37,7 @@
             @else
                 <form method="post" action="{{action('MainFaucetController@paymentFaucet')}}">
                     {{csrf_field()}}
-                    <button type="submit" class="large button">GET ETHERIUM!</button>
+                    <button type="submit" class="large button">GET ETHEREUM!</button>
                 </form>
             @endif
             <h4>Your refferal link - <code>http://{{config('faucet.domain')}}/{{Auth::user()->name}}</code></h4>
@@ -45,7 +45,7 @@
         </div>
     @endif
     <div class="text-block">
-        {{--<h3>Etherium coins:</h3>--}}
+        {{--<h3>EtherEum coins:</h3>--}}
         {{--<img class="thumbnail" src="http://placehold.it/850x350">--}}
         <p>Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as
             programmed without any possibility of downtime, censorship, fraud or third party interference.</p>
@@ -56,8 +56,8 @@
             middle man or counterparty risk.</p>
         {{--<div class="callout">
             <ul class="menu simple">
-                <li><a href="#">Etherium price</a></li>
-                <li><a href="#">Etherium volume</a></li>
+                <li><a href="#">EtherEum price</a></li>
+                <li><a href="#">EtherEum volume</a></li>
             </ul>
         </div>--}}
     </div>

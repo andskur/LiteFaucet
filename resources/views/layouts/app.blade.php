@@ -16,7 +16,7 @@
         <ul class="menu">
             <li class="menu-text">{{config('faucet.name')}} Faucet</li>
             <li><a href="{{url('/')}}">Home</a></li>
-            <li><a href="{{url('/faucets')}}">Etherium faucets</a></li>
+            <li><a href="{{url('/faucets')}}">Ethereum faucets</a></li>
         </ul>
     </div>
     <div class="top-bar-right">
@@ -32,7 +32,7 @@
                     @else
                         <span>0</span>
                     @endif
-                    etherium
+                    ethereum
                 </li>
                 <li><a href="{{ url('/logout') }}">Logout</a></li>
             @endif
@@ -85,7 +85,7 @@
         </button>
     </div>
     <div class="reveal" id="signUpModal" data-reveal>
-        <h3>Join us and get a lot of etherium!</h3>
+        <h3>Join us and get a lot of ethereum!</h3>
         <form role="form" method="POST" action="{{ url('/register') }}">
             {{ csrf_field() }}
 
@@ -103,7 +103,7 @@
                 <span><strong>{{ $errors->first('email') }}</strong></span>
             @endif
 
-            <label>Etherium wallet
+            <label>Ethereum wallet
                 <input type="text" name="address" value="{{ old('address') }}">
             </label>
             @if ($errors->has('address'))
